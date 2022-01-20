@@ -1,0 +1,13 @@
+---
+layout: layout/base.pug
+tags: sample
+pagination:
+  data: sample
+  size: 1
+  alias: samplepage
+  addAllPagesToCollections: true
+permalink: "| sample/#{ samplepage.slug }/index.html"
+---
+
+h1 SAMPLE
+p !{ samplepage.title }

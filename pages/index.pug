@@ -1,0 +1,11 @@
+---
+layout: layout/base.pug
+---
+
+h1 Eleventy Pug Template
+
+- var pagelist = collections.sample
+ul
+  each page, index in pagelist
+    li
+      a(href=page.url)= page.url
